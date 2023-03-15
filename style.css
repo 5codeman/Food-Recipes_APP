@@ -1,0 +1,567 @@
+/* Code is written by CHIRAG RAJ */
+
+/* whole page */
+
+/* for hide scroll bar */
+::-webkit-scrollbar {
+    display: none;
+}
+
+body::-webkit-scrollbar {
+    overflow: hidden;
+    display: none;
+} 
+
+body {
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* nav bar section */
+#nav-menu {
+    height: 9vh;
+    width: 100vw;
+    background-color: darkorange;
+    display: flex;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 7px;
+}
+
+#text {
+    margin-top: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#home {
+    margin-left: auto;
+    margin-top: 18px;
+    height: 40%;
+    border: none;
+    font-size: 13px;
+    background-color: transparent;
+    transition: all 0.3s linear;
+}
+
+#home:hover {
+    font-size: 20px;
+    margin-top: 16px;
+}
+#favourite_btn {
+    margin-top: 20px;
+    margin-right: 10px;
+    height: 40%;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#favourite_btn:hover {
+    color: white;
+}
+
+/* header & main section */
+#content {
+    height: 91vh;
+    width: 100vw;
+    background-image: url(bg_img.jpg);
+    background-size: 100vw 91vh;
+    background-repeat: no-repeat;
+}
+
+/* header section start */
+#header {
+    height: 30vh;
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+#h1 {
+    margin: 0px;
+    color: white;
+    letter-spacing: 6px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#search_box {
+    height: 25%;
+    width: 60%;
+    outline: none;
+    border-style: hidden;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 10px;
+
+}
+
+#h3 {
+    margin: 0px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* main section start  */
+#main {
+    height: 50vh;
+    width: 65vw;
+    margin-left: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+/* fetch recipes card css property */
+.food_card {
+    background-color: darkorange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 46vh;
+    width: 15vw;
+    min-width: 220px;
+    min-height: 315px;
+    margin: 6px;
+    border-radius: 25px;
+}
+
+.card_img_div {
+    height: 60%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card_img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.card_text_para {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.card_lower_div {
+    height: 12%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: black;
+    height: 75%;
+    width: 52%;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+
+/* google icons script1 */
+.material-symbols-sharp {
+    color: black;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 40
+}
+
+.material-symbols-sharp:hover {
+    color: red;
+}
+
+/* work on View Recipe */
+.Recipe_card {
+    height: 80vh;
+    width: 60vw;
+    background-color: darkorange;
+    position: absolute;
+    top: 15vh;
+    left: 2.5vw;
+    border-radius: 35px;
+    display: flex;
+    box-shadow: 10px 10px 100px whitesmoke;
+}
+
+#left {
+    height: 100%;
+    width: 40%;
+    margin-left: 20px;
+    margin-top: 10vh;
+}
+
+#left_upper {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#left_upper_img {
+    height: 270px;
+    width: 270px;
+    border-radius: 30px;
+}
+
+#left_upper_p1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: white;
+}
+
+#left_upper_p2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    margin-top: -14px;
+}
+
+#left_lower {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#left_lower_btn {
+    height: 45%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: black;
+    border-radius: 12px;
+    border: 3px solid black;
+}
+
+#left_lower_btn:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+
+#right {
+    height: 85%;
+    width: 60%;
+    margin-right: 40px;
+    margin-top: 10vh;
+    margin-left: 40px;
+    overflow-y: scroll;
+}
+
+#right_inst {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+    margin: 0px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#right_p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: black;
+    text-align: justify;
+    margin-top: 23px;
+}
+
+.cross {
+    position: absolute;
+    top: 3vh;
+    right: 1.5vw;
+    font-size: 1.8rem; 
+}
+/* google icons script 2 */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 40
+}
+
+.material-symbols-outlined:hover {
+    color: red;
+}
+
+/* No search found */
+#error1 {
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}
+
+#sad {
+    font-size: 7rem;
+    margin: 0px;
+}
+
+/* Making Favourite section */
+#favourite_container {
+    height: 100vh;
+    width: 360px;
+    position: absolute;
+    right: -360px;
+    transition: right 0.3s linear;
+}
+
+#fav_head {
+    height: 10vh;
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkorange;
+}
+
+#fav_head h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding-left: 1vw;
+}
+
+#EXIT {
+    position: absolute;
+    top: 3vh;
+    right: 1vw;
+    font-size: 1.8rem;
+}
+
+#fav_body {
+    padding-top: 10px;
+    height: 90vh;
+    width: 360px;
+    /* background-color: #212529; */
+    background-image: linear-gradient(#504d54,#212529);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+}
+
+#fav_body h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 40vh;
+}
+
+.card_lower_div_fav {
+    height: 10%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.btn1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    height: 90%;
+    width: 40%;
+    border-radius: 10px;
+    border: 3px solid black;
+    margin: 5px;
+}
+
+.btn1:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+
+
+/* CODE FOR RESPONSIVENESS */
+
+ @media screen and (max-width: 900px){
+    /* home page */
+    #header {
+        width: 100vw;
+    }
+
+    /* main section food card*/
+    #main {
+        width: 100vw;
+        margin-left: 0px;
+        justify-content: center;
+    }
+
+    /* Recipe_card Section*/
+    .Recipe_card {
+        width: 90vw;
+        left: 5vw;
+    }
+
+    #left_upper {
+        margin-top: 0vw;
+    }
+
+    #left_upper_img {
+        height: 200px;
+        width: 200px;
+    }
+
+    #left_lower {
+        margin-top: -5vh;
+    }
+
+    #right_inst {
+        font-size: 1.5rem;
+    }
+    
+    .cross {
+        top: 2.4vh;
+        right: 2.7vw;
+    }
+ }
+
+ @media screen and (max-width: 500px) {
+    /* nav bar */
+    #text {
+        font-size: 0.8rem;
+        margin-top: 26px;
+    }
+    
+    #favourite_btn {
+        font-size: 0.7rem;
+        margin-left: auto;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+
+    #home {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    /* home page */
+    #h1 {
+        letter-spacing: 3px;
+        font-size: 1.5rem;
+    }
+    
+    #h3 {
+        letter-spacing: 1px;
+        font-size: 15px;
+    }
+
+    /* Recipe_card Section*/
+    .Recipe_card {
+        flex-direction: column;
+    }
+    
+    #left {
+        height: 50%;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 3vh;
+    }
+    
+    #left_upper {
+        height: 90%;
+    }
+    
+    #left_upper_img {
+        height: 160px;
+        width: 160px;
+    }
+    
+    #left_upper_p1 {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+    
+    #left_upper_p2 {
+        font-size: 0.8rem;
+    }
+    
+    #left_lower {
+        height: 25%;
+        margin-top: 0vh;
+    }
+    
+    #left_lower_btn {
+        font-size: 0.8rem;
+    }
+    
+    #right {
+        height: 37.5%;
+        width: 90%;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 4vh;
+    }
+    
+    #right_inst {
+        font-size: 1.4rem;
+    }
+    
+    #right_p {
+        font-size: 0.9rem;
+        margin-top: 12px;
+    }
+
+    .cross {
+        top: 2.3vh;
+        right: 4.2vw;
+        font-size: 1.2rem; 
+    }
+ }
+
+/* End code */
+
