@@ -431,6 +431,15 @@ body {
 /* CODE FOR RESPONSIVENESS */
 
  @media screen and (max-width: 900px){
+     /* No search found */
+    #error1 {
+        font-size: 2rem;
+    }
+
+    #sad {
+        font-size: 5.5rem;
+    }
+     
     /* home page */
     #header {
         width: 100vw;
@@ -473,6 +482,15 @@ body {
  }
 
  @media screen and (max-width: 500px) {
+     /* No search found */
+    #error1 {
+        font-size: 1.5rem;
+    }
+
+    #sad {
+        font-size: 4.5rem;
+    }
+
     /* nav bar */
     #text {
         font-size: 0.8rem;
