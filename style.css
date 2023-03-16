@@ -349,8 +349,9 @@ body {
 #favourite_container {
     height: 100vh;
     width: 360px;
-    position: absolute;
-    right: -360px;
+/*     position: absolute; */
+/*     right: -360px; */
+    position: fixed;
     transition: right 0.3s linear;
 }
 
@@ -377,6 +378,7 @@ body {
 }
 
 #fav_body {
+    box-sizing: border-box;
     padding-top: 10px;
     height: 90vh;
     width: 360px;
